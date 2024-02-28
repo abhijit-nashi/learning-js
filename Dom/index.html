@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <nav class="block">
+        <p class="Paragraph">Welcome to my Website</p>
+    </nav>
+
+    <div class="block">
+        <h1 id="name-block">This is <span id="username">Abhijit Nashi</span></h1>
+    </div>
+
+    <div id="container"></div>
+    <button id ="Do it">Click</button>
+<script>
+    //document.querySelector
+    //tag , #id,  .class
+
+
+    const button = document.getElementById("Do it")
+    const container1 = document.getElementById("container");
+
+    button.addEventListener("click", ()=>{
+        const ele = document.createElement("h1")
+        ele.innerText =  "Abhijit";
+        container1.appendChild(ele);
+    });
+
+    
+   
+</script>
+
+</body>
+
+</html>
